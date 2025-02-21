@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neura Atmosphere</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="background-container">
+    <div id="stars"></div>
+  </div>
+
+  <main>
+    <div class="center-content">
+      <div class="logo">
+        <img src="https://media.discordapp.net/attachments/1341853764159541339/1342177001213263892/flash.png?ex=67b8af3d&is=67b75dbd&hm=7d697a4371de999fa151fdadf336c97a855507d1c78fa138fab81404f02d0a66&=&format=webp&quality=lossless&width=471&height=471"
+             alt="Logo"
+             class="lightning-bolt">
+        <h1 class="title">Welcome to Neura</h1>
+      </div>
+      <div class="time" id="time">00:00</div>
+      <div class="greeting" id="greeting">Good evening</div>
+
+      <div id="music-player">
+        <div id="youtube-player" style="display: none;"></div>
+        <div class="player-header">
+          <input type="text" id="music-search" placeholder="Search songs...">
+          <button id="search-btn">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+          </button>
+        </div>
+        <div id="search-results"></div>
+        <div id="now-playing" class="hidden">
+          <div class="track-info">
+            <div id="track-title"></div>
+            <div id="track-channel"></div>
+          </div>
+          <div class="player-controls">
+            <button id="prev-track"><i class='bx bx-skip-previous' ></i></button>
+            <button id="play-pause"><i class='bx bx-play' ></i></button>
+            <button id="next-track"><i class='bx bx-skip-next' ></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="notification-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
